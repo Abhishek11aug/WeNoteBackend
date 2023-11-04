@@ -1,5 +1,5 @@
 const jwt = require("jsonwebtoken");
-require('dotenv').config({path: "./vars/.env"})
+require('dotenv').config()
 const jwtSK = process.env.jwtSK;
 
 const userModel = require("../models/users");
