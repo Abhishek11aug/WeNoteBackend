@@ -3,7 +3,7 @@ const userModel = require("../models/users");
 const bcrypt = require("bcrypt");
 const fetchUser = require("../Middleware/fetchUser")
 const jwt = require("jsonwebtoken");
-require('dotenv').config()
+require('dotenv').config({path: "./vars/.env"})
 const jwtSK = process.env.jwtSK;
 const saltRounds = 10;
 

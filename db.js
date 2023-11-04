@@ -1,5 +1,5 @@
 const mongoose = require("mongoose");
-require('dotenv').config()
+require('dotenv').config({path: "./vars/.env"})
 const db_link = `mongodb+srv://${process.env.MongoUser}:${process.env.MongoPassword}@cluster0.odskqtk.mongodb.net/`;
 connectToMongo = ()=>{
     mongoose.connect(db_link).then(()=>{

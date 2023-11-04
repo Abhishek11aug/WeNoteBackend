@@ -1,5 +1,5 @@
 const connectToMongo = require("./db")
-require('dotenv').config()
+require('dotenv').config({path: "./vars/.env"})
 const express = require('express')
 const auth = require('./routes/auth')
 const notes = require('./routes/notes')
